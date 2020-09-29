@@ -17,4 +17,5 @@ async function compute() {
     console.log('result', json);
     document.getElementById('result-number').innerText = json.result;
     document.getElementById('result-size').innerText = json.result.length;
+    document.getElementById('result-time').innerText = `~ ${Math.floor(parseInt(json.time, 10) / 1000)}sec`;
 }

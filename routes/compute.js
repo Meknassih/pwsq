@@ -10,9 +10,10 @@ router.post('/', function (req, res, next) {
       error: 'BADARGS',
       message: 'Base or exponent is missing'
     });
-  const result = bigInt(req.body.base).pow(bigInt(req.body.exponent));
+  const startDate = Date.now();
   return res.status(200).send({
-    result
+    result: bigInt(req.body.base).pow(bigInt(req.body.exponent)).toString(10),
+    time: Date.now() - startDate
   });
 });
 
