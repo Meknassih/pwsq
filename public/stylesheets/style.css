@@ -27,7 +27,7 @@ a {
 }
 
 .stat {
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 8px;
   padding: 8px;
   overflow-wrap: anywhere;
@@ -38,6 +38,18 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+
+.button {
+  border: white 2px solid;
+  border-radius: 8px;
+  padding: 8px 32px;
+  background: transparent;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin: 16px;
 }
 
 /* -- SPINNER -- */
