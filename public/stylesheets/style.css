@@ -1,8 +1,34 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
+  height: 100vh;
+}
+
+div.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+#result-number {
+  border: white 2px solid;
+  border-radius: 8px;
+  padding: 8px;
+  overflow-wrap: anywhere;
+  font-weight: bold;
+}
+
+#result-size {
+  font-size: 2rem;
+  border-radius: 8px;
+  padding: 8px;
+  overflow-wrap: anywhere;
+  font-weight: bold;
 }

@@ -16,4 +16,5 @@ async function compute() {
     const json = await response.json();
     console.log('result', json);
     document.getElementById('result-number').innerText = json.result;
+    document.getElementById('result-size').innerText = json.result.length;
 }
